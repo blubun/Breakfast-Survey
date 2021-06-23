@@ -1,0 +1,66 @@
+header {
+    font-size: 100px;
+}
+
+body {
+    background-color: burlywood;
+}
+form{
+    background-color: antiquewhite;
+    border: 3px solid black;
+}
+
+#formAllDivs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px;
+}
+
+.formDivs {
+    grid-column: 1 / 1;
+}
+
+
+label {
+    font-size: 20px;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#firstnameErr {
+    grid-area: 1 / 2;
+}
+
+#lastnameErr {
+    grid-area: 2 / 2;
+}
+
+#phoneErr {
+    grid-area: 3 / 2;
+}
+
+#emailErr {
+    grid-area: 4 / 2;
+}
+
+#urlErr {
+    grid-area: 5 / 2;
+}
+
+#badge {
+    font-size: 30px;
+    background-color: salmon;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+footer {
+    font-size: 20px;
+    
+    
+}
+
