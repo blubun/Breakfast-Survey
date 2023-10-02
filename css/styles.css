@@ -8,20 +8,66 @@ header {
     padding: 20px 20px 0;
 }
 
-form {
-    display: grid;
-    margin: 0 15% 0 15%;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
 
 #personal-info {
     display: grid;
     align-items: center;
     justify-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 fieldset {
     border: none;
+}
+
+#formAllDivs {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.formDivs {
+   grid-column: 1 /2;
+   display: flex;
+   flex-direction: column;
+}
+
+#firstnameErr {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+}
+
+#lastnameErr {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#phoneErr {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#emailErr {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#urlErr {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 1fr 1fr;
+}
+
+#questions {
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
